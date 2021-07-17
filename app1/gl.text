@@ -1,0 +1,35 @@
+mutation{
+  createCourse(input: {
+    courseName: "graphql"
+    price: 200
+    stack: WEB
+    teachingAssists: [
+      {
+        firstName: "Nidhi"
+        lastName: "Verma"
+        experience: 1
+      },
+      {
+        firstName: "Ajai"
+        lastName: "Verma"
+        experience: 2
+      }
+    ]
+  }){
+    id,
+    courseName  //ask for courseName
+  }
+}
+
+////////////////////////////////////////
+yinoeCERxwLnx7He5WJxP
+
+
+query{
+  getCourse(id: "yinoeCERxwLnx7He5WJxP"){
+    id
+    teachingAssists{
+      experience
+    }
+  }
+}
